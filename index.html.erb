@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Boulder Runners Club</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///0D///9A////QP///0D///9A////QP///0D///9A////QP///0D///9A////QP///0D///9A////QP///0D/////plEL/6RQCP+jTwb/mEcd/3c2gf9sL5//gDxy/59NDv+dSgD/n0sC/6BNBf+kUAv/plIO////2////////////2gAAP9mAAD/OgAl/wAA6v8AAPX/AADw/wAA8P8AAMz/QwAA/14AAP9fAAD/YgAA/2QAAP//1qf///////////+3aif/bR1D/wAA9/8AAPb/AAD+/wAT//8AAPP/AADt/wAA4P+ENB//rmEc/7FjIf+yZST////i/////////////////1Aj//8AAPj/ACD//wD///8A////AP///wAA/v9pQv////////////////////////////////////////////8AAP//AAD3/wDk//8A////AP///wD///9v////////////////////////////////////////////////////AAD//wAA9/8A2///AP///wD///8A////Y////////////////////////////////////////////////////140//8AAPj/AAf//wD///8A////AP///wAA+P89D////////////////////////////////////////5c+AP9nEBz/AAD0/wAA9/8AAPf/AAD//wAA8P8AAO7/AADX/3UcAP+QNwD/kzoA/5Q8AP//987///////////9oAAD/ZwAA/0QACf8AANr/AAD3/wAA8v8AAPL/AQC1/0sAAP9fAAD/YAAA/2MAAP9kAAD//9iq////////////awAA/2oAAP9nAAD/YAAA/00AAP9GACP/VAAA/2kAAP9oAAD/YAAA/2MAAP9mAAD/aAAA///crv//////////W////1v///9b////W////1v///9b////W////1v///9b////W////1v///9b////W////1v///9b////WwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAA==" rel="icon" type="image/x-icon">
+    <style>
+      .details .links {
+        font-size: 0.5em;
+      }
+      .event {
+        padding-bottom: 2rem;
+      }
+      .event:hover {
+        background-color: #f8f9fa;
+      }
+      .container > h1 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      #locations {
+        width: 100%;
+        height: 500px;
+      }
+      .footer {
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+      }
+      .footer .container {
+        width: auto;
+        padding: 0 15px;
+      }
+      .gm-style-iw .cards {
+        max-height: 400px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="https://boulderrunners.club">Boulder Runners</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="navbar-nav">
+            <a class="nav-link" href="#about">
+              About
+            </a>
+          </li>
+          <li class="navbar-nav">
+            <a class="nav-link" href="#schedule">
+              Schedule
+            </a>
+          </li>
+          <li class="navbar-nav">
+            <a class="nav-link" href="#map">
+              Map
+            </a>
+          </li>
+          <li class="navbar-nav">
+            <a class="nav-link" href="mailto:hi@denverrunners.club">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 id="about">About</h1>
+      <p>Boulder has a large running community. As a newcomer (like myself), it is daunting to navigate all the meetups and events.</p>
+      <p>Boulder Runners aggregates running groups, stores, etc. for convenience. Hoping to help grow the community.</p>
+      <h1 id="schedule">
+        Schedule
+        <small class="text-muted">
+          as of <%= Time.now.strftime("%B %e, %Y") %>
+        </small>
+      </h1>
+      <%- EventsPresenter.new(events).events.each do |event| -%>
+      <div class="event row">
+        <div class="date col-md-2 align-middle text-center">
+          <h3>
+            <%= event.timestamp.strftime('%a') %>,
+            <%= event.timestamp.strftime '%b' %>
+            <%= event.timestamp.day %>
+          </h3>
+          <h3><%= event.timestamp.strftime('%l:%M%p')%></h3>
+        </div>
+        <div class="details col-md-10">
+          <h2 class="title">
+            <a rel="noopener" target="_blank" href="<%= event.event_url %>">
+              <%= event.title %>
+            </a>
+            <small class="text-muted">
+              from
+              <a rel="noopener" target="_blank" href="<%= event.group_url %>">
+                <%= event.group_name %>
+              </a>
+            </small>
+          </h2>
+          <div class="description">
+            <%= event.description %>
+          </div>
+        </div>
+      </div>
+      <%- end -%>
+      <h1 id="map">
+        Map
+        <small class="text-muted">
+          as of <%= Time.now.strftime("%B %e, %Y") %>
+        </small>
+      </h1>
+      <div id="locations"></div>
+    </div>
+    <footer class="footer">
+      <div class="container text-center">
+        <span class="text-muted">&copy;2018 Boulder Runners Club</span>
+        <a href="https://github.com/jtarchie/denver-runners-club">github</a>
+        <a href="webcal://denverrunners.club/index.ics">webcal</a>
+      </div>
+    </footer>
+    <script>
+      function initMap() {
+        var locationWithEvents = <%= EventsMapPresenter.new(events).to_json %>;
+
+        var map = new google.maps.Map(document.getElementById('locations'), {
+          center: {lat: 39.7640021, lng: -105.1352965},
+          zoom: 10
+        });
+
+        var infoWindow = new google.maps.InfoWindow({}),
+            latlngbounds = new google.maps.LatLngBounds();
+
+        locationWithEvents.forEach(function(l) {
+          var marker = new google.maps.Marker({
+            position: l.location,
+            map: map,
+            title: l.events[0].title
+          });
+
+          latlngbounds.extend(l.location);
+
+          var contentHTML = `<div class="cards">`;
+          l.events.forEach(function(event) {
+            contentHTML += `
+                <div class="card border-primary">
+                  <div class="card-header"><a rel="noopener" target="_blank" href="${event.group.url}">${event.group.name}</a> -- ${event.timestamp}</div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a rel="noopener" target="_blank" href="${event.url}">${event.title}</a></h5>
+                    <div class="card-text">${event.description}</div>
+                  </div>
+                </div>
+            `;
+          });
+          contentHTML += `</div>`;
+          marker.addListener('click', function() {
+            infoWindow.setContent(contentHTML);
+            infoWindow.open(map, marker);
+          });
+        });
+        map.fitBounds(latlngbounds);
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIUDudodQyD_24lruwMaOHlaJXkXVy2k0&callback=initMap&v=3.exp&use_slippy=true"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112531804-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112531804-1');
+    </script>
+  </body>
+</html>

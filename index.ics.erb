@@ -1,0 +1,16 @@
+<%=
+  require 'icalendar'
+  require 'icalendar/tzinfo'
+
+  cal = Icalendar::Calendar.new
+  EventsPresenter.new(events).events.each do |event|
+    cal.event do |e|
+      e.dtstart     = Icalendar::Values::DateTime.new event.timestamp, 'tzid' => 'America/Denver'
+      e.dtend       = Icalendar::Values::DateTime.new event.timestamp + 3600, 'tzid' => 'America/Denver'
+      e.summary     = event.title
+      e.description = event.description
+      e.url         = event.event_url
+    end
+  end
+  cal.to_ical
+%>

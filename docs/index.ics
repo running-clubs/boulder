@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20180127T061044Z
+UID:1e9d0f0d-dd37-468b-a502-b5a746ba7caa
+DTSTART;TZID=America/Denver:20180128T070000
+DTEND;TZID=America/Denver:20180128T080000
+DESCRIPTION:<p>Kick off January with the Evolve not Resolve events at Bould
+ er Running Company</p>\n\n<p>Join us on Sunday 1/28 for a community Fun Ru
+ n at 7am followed by a community yoga class at 8am.<br>\nJoy Shanley will 
+ be guiding class.</p>\n
+SUMMARY:Evolve not Resolve Run/Yoga
+URL:https://facebook.com/166493650630744
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20180127T061044Z
+UID:95591ea9-acbc-41a3-9e7c-95b1a87a28ca
+DTSTART;TZID=America/Denver:20180131T180000
+DTEND;TZID=America/Denver:20180131T190000
+DESCRIPTION:<p>Let&#39\;s train to rock the 2018 Oskar Blues Old Man Winter
+  Rally! Meet at Boulder Running Company to try out some The Boa System sho
+ es and go for a 6pm run. Enjoy a cold Oskar Blues Brewery Dales Pale Ale a
+ fter the run and a prize raffle!</p>\n
+SUMMARY:Old Man Winter Training Run and Gear Up Clinic - featuring Boa
+URL:https://facebook.com/407310133037806
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20180127T061044Z
+UID:77ef7035-ec87-4bb5-9f55-bd1570938222
+DTSTART;TZID=America/Denver:20180203T090000
+DTEND;TZID=America/Denver:20180203T100000
+DESCRIPTION:<p>Boulder Running Company\, Castle Rock Chamber and Stridemob 
+ have joined forces in the effort to bring you the Zackari Parrish 5k Run/W
+ alk #BacktheBlue on Saturday\, February 3rd at the Douglas County Events C
+ enter.  The race will coincide with the Castle Rock Chamber&#39\;s Douglas
+  County Lifestyle Expo. </p>\n\n<p>The  Zackari Parrish 5k Run/Walk (9 AM 
+ to 12 PM) was inspired by the sacrifice of Deputy Parrish and his Douglas 
+ County brothers behind the badge by Erin Dilbeck.  The Parrish Family as w
+ ell as the Fallen Officers fund are beneficiaries of the 5k.  Following th
+ e race\, runners can enjoy a pancake breakfast prior to entering the Dougl
+ as County Lifestyle Expo (where the awards ceremony will be held) they can
+  enjoy vendor booths and ongoing entertainment.<br><br>\nBring your specta
+ tors\, the expo is free and open to public and will include a kid&#39\;s o
+ bstacle course\, interactive displays and more.  To learn more details abo
+ ut the 5k race and to register visit:<br>\n<a href="http://zackariparrish5
+ k.itsyourrace.com/event.aspx?id=7549" title="http://zackariparrish5k.itsyo
+ urrace.com/event.aspx?id=7549" target="_blank" rel="noopener">http://zacka
+ riparrish5k.itsyourrace.com/event...</a>     </p>\n\n<p>The Douglas County
+  Lifestyle Expo\, organized by the Castle Rock Chamber of Commerce\, is a 
+ one day event held at the Douglas County Events Center (8 AM to 2 PM) that
+  inspires and educates community residents to Live\, Work\, Play in Dougla
+ s County.  This event showcases all things great about Douglas County\, hi
+ ghlights businesses and non profit organizations that support our communit
+ y and celebrates them.  The Boulder Running Company\, Castle Rock Chamber 
+ and Stridemob are using this day to collaborate and come together as a com
+ munity and support each other.  </p>\n\n<p>The Douglas County Lifestyle Ex
+ po is a free event\, bring the entire family for a day of family fun.  Vie
+ w more details about the event and vendor registration can be found at <a 
+ href="https://castlerock.org/dc-lifestyle-expo/" title="https://castlerock
+ .org/dc-lifestyle-expo/" target="_blank" rel="noopener">https://castlerock
+ .org/dc-lifestyle-expo/</a>.</p>\n\n<p>For those who are unable to attend 
+ the race but would still like to donate\, please visit:  <a href="http://w
+ ww.dcsheriff.net/fallen-officer-fund/" title="http://www.dcsheriff.net/fal
+ len-officer-fund/" target="_blank" rel="noopener">http://www.dcsheriff.net
+ /fallen-officer-fund/...</a></p>\n\n<p>Thank you for assisting us to raise
+  money for the Parrish Family &amp\; the Fallen Officers Fund. Please Note
+ :  All ages are welcomed and all animals too but please make sure animals 
+ are on a leash and be advised that pets are not allowed inside the Douglas
+  County Events Center (only service dogs permitted).</p>\n
+SUMMARY:Back The Blue 5k Run/Walk
+URL:https://facebook.com/933940413420706
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20180127T061044Z
+UID:ccafe940-8d6d-43ab-8f5e-b222944b8e8c
+DTSTART;TZID=America/Denver:20180203T090000
+DTEND;TZID=America/Denver:20180203T100000
+DESCRIPTION:<p>We will be meeting at BRC Boulder for a non-sanctioned\, cas
+ ual run in to support the ZackarI Parish Run/Walk 5K.<br><br>\nFollow the 
+ link and click the green &quot\;REGISTER NOW&quot\; button to get signed u
+ p.<br><br>\n<a href="http://zackariparrish5k.itsyourrace.com/event.aspx?id
+ =7549" title="http://zackariparrish5k.itsyourrace.com/event.aspx?id=7549" 
+ target="_blank" rel="noopener">http://zackariparrish5k.itsyourrace.com/eve
+ nt...</a></p>\n\n<p>The actual event in Castle Rock has exceeded the limit
+  so this is a great way to still @BackTheBlue from Boulder.  </p>\n\n<p>Th
+ e $20 does NOT include the T-shirt but an additional link to purchase a sh
+ irt will be available soon.</p>\n
+SUMMARY:Zackari Parrish Virtual 5K Run/Walk Boulder
+URL:https://facebook.com/419608091790851
+END:VEVENT
+END:VCALENDAR
+
