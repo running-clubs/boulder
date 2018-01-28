@@ -1,7 +1,7 @@
 require 'generator/simple'
 
 facebook_groups = [
-  FacebookGroup.new('225877381266', 'Boulder Running Company'),
+  FacebookGroup.new('225877381266', 'Boulder Running Company')
 ]
 
 repeating_groups = []
