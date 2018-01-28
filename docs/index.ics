@@ -3,20 +3,8 @@ VERSION:2.0
 PRODID:icalendar-ruby
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTSTAMP:20180127T172302Z
-UID:d8233274-39db-43bc-998c-ae424130bd72
-DTSTART;TZID=America/Denver:20180128T070000
-DTEND;TZID=America/Denver:20180128T080000
-DESCRIPTION:<p>Kick off January with the Evolve not Resolve events at Bould
- er Running Company</p>\n\n<p>Join us on Sunday 1/28 for a community Fun Ru
- n at 7am followed by a community yoga class at 8am.<br>\nJoy Shanley will 
- be guiding class.</p>\n
-SUMMARY:Evolve not Resolve Run/Yoga
-URL:https://facebook.com/166493650630744
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20180127T172302Z
-UID:65f3836b-79c9-4832-93ac-c403e05269bf
+DTSTAMP:20180128T154559Z
+UID:672e604d-92bf-4d78-be9e-9d484c235ecd
 DTSTART;TZID=America/Denver:20180131T180000
 DTEND;TZID=America/Denver:20180131T190000
 DESCRIPTION:<p>Let&#39\;s train to rock the 2018 Oskar Blues Old Man Winter
@@ -27,8 +15,8 @@ SUMMARY:Old Man Winter Training Run and Gear Up Clinic - featuring Boa
 URL:https://facebook.com/407310133037806
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180127T172302Z
-UID:2ba0b8ac-114f-433b-90ac-f7cfa53d7d13
+DTSTAMP:20180128T154559Z
+UID:6bc7366b-3de4-42b4-b628-e6c6a675fcbe
 DTSTART;TZID=America/Denver:20180203T090000
 DTEND;TZID=America/Denver:20180203T100000
 DESCRIPTION:<p>Boulder Running Company\, Castle Rock Chamber and Stridemob 
@@ -73,8 +61,8 @@ SUMMARY:Back The Blue 5k Run/Walk
 URL:https://facebook.com/933940413420706
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20180127T172302Z
-UID:c8a399c7-6472-45b5-bf60-ef7bb3577b30
+DTSTAMP:20180128T154559Z
+UID:62471788-cab1-4637-a7a4-f79b9517e2d8
 DTSTART;TZID=America/Denver:20180203T090000
 DTEND;TZID=America/Denver:20180203T100000
 DESCRIPTION:<p>We will be meeting at BRC Boulder for a non-sanctioned\, cas
