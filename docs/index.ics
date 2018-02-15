@@ -2,19 +2,5 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:icalendar-ruby
 CALSCALE:GREGORIAN
-BEGIN:VEVENT
-DTSTAMP:20180214T143036Z
-UID:0fc79aa5-ed06-48e8-99a3-1dee82847613
-DTSTART;TZID=America/Denver:20180214T180000
-DTEND;TZID=America/Denver:20180214T190000
-DESCRIPTION:<p>Come be our Valentine at the Wednesday night fun run!!</p>\n
- \n<p>We &lt\;3 Running! </p>\n\n<p>Boulder Running Company and Lululemon w
- ant to be your Valentine! </p>\n\n<p>Come out for our Wednesday night fun 
- run and Valentine goodies from Lululemon on Wednesday\, February 14th at 6
- :00 pm.  </p>\n\n<p>All pace groups and levels welcome!  3 and 5 mile rout
- es!</p>\n
-SUMMARY:We <3 Running!
-URL:https://facebook.com/214075705823715
-END:VEVENT
 END:VCALENDAR
 
